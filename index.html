@@ -1,40 +1,99 @@
-<!DOCTYPE html>
-<html>
-<head>
-<script>
-function getVote(int) {
-  var xmlhttp=new XMLHttpRequest();
-  xmlhttp.onreadystatechange=function() {
-    if (this.readyState==4 && this.status==200) {
-      document.getElementById("poll").innerHTML=this.responseText;
-    }
-  }
-  xmlhttp.open("GET","poll_vote.php?vote="+int,true);
-  xmlhttp.send();
-}
-</script>
-</head>
-<body>
-
+<p style="text-align: center;">&nbsp;</p>
 <div id="poll">
 <h3 style="text-align: center;">IFW BATTLEGROUND</h3>
-<h3 style="text-align: center;">1. FIGHT<h3>
-< style="text-align: center;" form method="post" action="https://poll.pollcode.com/88638143"><div style="background-color:#EEEEEE;padding:2px;width:175px;font-family:Arial;font-size:small;color:#000000;"><div style="padding:2px 0px 4px 2px;"><strong>VOTE!</strong></div><input type="radio" name="answer" value="1" id="answer886381431" style="float:left;" /><label for="answer886381431" style="float:left;width:150px;">Left </label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer886381432" style="float:left;" /><label for="answer886381432" style="float:left;width:150px;">Right</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px"> <a href=""></a></div></div></form>
-<h3>2. FIGHT<h3>
-<form method="post" action="https://vote.pollcode.com/29813488"><div style="background-color:#EEEEEE;padding:2px;width:175px;font-family:Arial;font-size:small;color:#000000;"><div style="padding:2px 0px 4px 2px;"><strong>VOTE!</strong></div><input type="radio" name="answer" value="1" id="answer886381431" style="float:left;" /><label for="answer886381431" style="float:left;width:150px;">Left </label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer886381432" style="float:left;" /><label for="answer886381432" style="float:left;width:150px;">Right</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px"> <a href=""></a></div></div></form>
-<h3>3. FIGHT<h3>
- <form method="post" action="https://vote.pollcode.com/49121979"><div style="background-color:#EEEEEE;padding:2px;width:175px;font-family:Arial;font-size:small;color:#000000;"><div style="padding:2px 0px 4px 2px;"><strong>VOTE!</strong></div><input type="radio" name="answer" value="1" id="answer886381431" style="float:left;" /><label for="answer886381431" style="float:left;width:150px;">Left </label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer886381432" style="float:left;" /><label for="answer886381432" style="float:left;width:150px;">Right</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px"><a href=""></a></div></div></form> 
-<h3>4. FIGHT<h3>
- <form method="post" action=" https://vote.pollcode.com/96465251"><div style="background-color:#EEEEEE;padding:2px;width:175px;font-family:Arial;font-size:small;color:#000000;"><div style="padding:2px 0px 4px 2px;"><strong>VOTE!</strong></div><input type="radio" name="answer" value="1" id="answer886381431" style="float:left;" /><label for="answer886381431" style="float:left;width:150px;">Left </label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer886381432" style="float:left;" /><label for="answer886381432" style="float:left;width:150px;">Right</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px"> <a href=""></a></div></div></form> 
-<h3>5. FIGHT<h3>
- <form method="post" action="https://vote.pollcode.com/11117842"><div style="background-color:#EEEEEE;padding:2px;width:175px;font-family:Arial;font-size:small;color:#000000;"><div style="padding:2px 0px 4px 2px;"><strong>VOTE!</strong></div><input type="radio" name="answer" value="1" id="answer886381431" style="float:left;" /><label for="answer886381431" style="float:left;width:150px;">Left </label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer886381432" style="float:left;" /><label for="answer886381432" style="float:left;width:150px;">Right</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px"><a href=""></a></div></div></form>   
-<h3>6. FIGHT<h3>
- <form method="post" action="https://vote.pollcode.com/96545898"><div style="background-color:#EEEEEE;padding:2px;width:175px;font-family:Arial;font-size:small;color:#000000;"><div style="padding:2px 0px 4px 2px;"><strong>VOTE!</strong></div><input type="radio" name="answer" value="1" id="answer886381431" style="float:left;" /><label for="answer886381431" style="float:left;width:150px;">Left </label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer886381432" style="float:left;" /><label for="answer886381432" style="float:left;width:150px;">Right</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px"> <a href=""></a></div></div></form> 
-<h3>7. FIGHT<h3>
-   <form method="post" action="https://vote.pollcode.com/84684776"><div style="background-color:#EEEEEE;padding:2px;width:175px;font-family:Arial;font-size:small;color:#000000;"><div style="padding:2px 0px 4px 2px;"><strong>VOTE!</strong></div><input type="radio" name="answer" value="1" id="answer886381431" style="float:left;" /><label for="answer886381431" style="float:left;width:150px;">Left </label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer886381432" style="float:left;" /><label for="answer886381432" style="float:left;width:150px;">Right</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px"> <a href=""></a></div></div></form> 
-<h3>8. FIGHT<h3>  
-   <form method="post" action="https://vote.pollcode.com/49565272"><div style="background-color:#EEEEEE;padding:2px;width:175px;font-family:Arial;font-size:small;color:#000000;"><div style="padding:2px 0px 4px 2px;"><strong>VOTE!</strong></div><input type="radio" name="answer" value="1" id="answer886381431" style="float:left;" /><label for="answer886381431" style="float:left;width:150px;">Left </label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer886381432" style="float:left;" /><label for="answer886381432" style="float:left;width:150px;">Right</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div><div align="right" style="font-size:10px"> <a href=""></a></div></div></form> 
-
-
-</body>
-</html>
+<h3 style="text-align: center;">1. FIGHT</h3>
+<form action="https://poll.pollcode.com/88638143" method="post">
+<div style="background-color: #eeeeee; padding: 2px; width: 175px; font-family: Arial; font-size: small; color: #000000;">
+<div style="padding: 2px 0px 4px 2px;"><strong>VOTE!</strong></div>
+<input id="answer886381431" style="float: left;" name="answer" type="radio" value="1" /><label style="float: left; width: 150px;" for="answer886381431">Left </label>
+<div style="clear: both; height: 2px;">&nbsp;</div>
+<input id="answer886381432" style="float: left;" name="answer" type="radio" value="2" /><label style="float: left; width: 150px;" for="answer886381432">Right</label>
+<div style="clear: both; height: 2px;">&nbsp;</div>
+<div style="padding: 3px;" align="center"><input type="submit" value=" Vote " />&nbsp;<input name="view" type="submit" value=" View " /></div>
+<div style="font-size: 10px;" align="right">&nbsp;</div>
+</div>
+</form>
+<h3 style="text-align: center;">2. FIGHT</h3>
+<form action="https://vote.pollcode.com/29813488" method="post">
+<div style="background-color: #eeeeee; padding: 2px; width: 175px; font-family: Arial; font-size: small; color: #000000;">
+<div style="padding: 2px 0px 4px 2px;"><strong>VOTE!</strong></div>
+<input id="answer886381431" style="float: left;" name="answer" type="radio" value="1" /><label style="float: left; width: 150px;" for="answer886381431">Left </label>
+<div style="clear: both; height: 2px;">&nbsp;</div>
+<input id="answer886381432" style="float: left;" name="answer" type="radio" value="2" /><label style="float: left; width: 150px;" for="answer886381432">Right</label>
+<div style="clear: both; height: 2px;">&nbsp;</div>
+<div style="padding: 3px;" align="center"><input type="submit" value=" Vote " />&nbsp;<input name="view" type="submit" value=" View " /></div>
+<div style="font-size: 10px;" align="right">&nbsp;</div>
+</div>
+</form>
+<h3 style="text-align: center;">3. FIGHT</h3>
+<form action="https://vote.pollcode.com/49121979" method="post">
+<div style="background-color: #eeeeee; padding: 2px; width: 175px; font-family: Arial; font-size: small; color: #000000;">
+<div style="padding: 2px 0px 4px 2px;"><strong>VOTE!</strong></div>
+<input id="answer886381431" style="float: left;" name="answer" type="radio" value="1" /><label style="float: left; width: 150px;" for="answer886381431">Left </label>
+<div style="clear: both; height: 2px;">&nbsp;</div>
+<input id="answer886381432" style="float: left;" name="answer" type="radio" value="2" /><label style="float: left; width: 150px;" for="answer886381432">Right</label>
+<div style="clear: both; height: 2px;">&nbsp;</div>
+<div style="padding: 3px;" align="center"><input type="submit" value=" Vote " />&nbsp;<input name="view" type="submit" value=" View " /></div>
+<div style="font-size: 10px;" align="right">&nbsp;</div>
+</div>
+</form>
+<h3 style="text-align: center;">4. FIGHT</h3>
+<form action=" https://vote.pollcode.com/96465251" method="post">
+<div style="background-color: #eeeeee; padding: 2px; width: 175px; font-family: Arial; font-size: small; color: #000000;">
+<div style="padding: 2px 0px 4px 2px;"><strong>VOTE!</strong></div>
+<input id="answer886381431" style="float: left;" name="answer" type="radio" value="1" /><label style="float: left; width: 150px;" for="answer886381431">Left </label>
+<div style="clear: both; height: 2px;">&nbsp;</div>
+<input id="answer886381432" style="float: left;" name="answer" type="radio" value="2" /><label style="float: left; width: 150px;" for="answer886381432">Right</label>
+<div style="clear: both; height: 2px;">&nbsp;</div>
+<div style="padding: 3px;" align="center"><input type="submit" value=" Vote " />&nbsp;<input name="view" type="submit" value=" View " /></div>
+<div style="font-size: 10px;" align="right">&nbsp;</div>
+</div>
+</form>
+<h3 style="text-align: center;">5. FIGHT</h3>
+<form action="https://vote.pollcode.com/11117842" method="post">
+<div style="background-color: #eeeeee; padding: 2px; width: 175px; font-family: Arial; font-size: small; color: #000000;">
+<div style="padding: 2px 0px 4px 2px;"><strong>VOTE!</strong></div>
+<input id="answer886381431" style="float: left;" name="answer" type="radio" value="1" /><label style="float: left; width: 150px;" for="answer886381431">Left </label>
+<div style="clear: both; height: 2px;">&nbsp;</div>
+<input id="answer886381432" style="float: left;" name="answer" type="radio" value="2" /><label style="float: left; width: 150px;" for="answer886381432">Right</label>
+<div style="clear: both; height: 2px;">&nbsp;</div>
+<div style="padding: 3px;" align="center"><input type="submit" value=" Vote " />&nbsp;<input name="view" type="submit" value=" View " /></div>
+<div style="font-size: 10px;" align="right">&nbsp;</div>
+</div>
+</form>
+<h3 style="text-align: center;">6. FIGHT</h3>
+<form action="https://vote.pollcode.com/96545898" method="post">
+<div style="background-color: #eeeeee; padding: 2px; width: 175px; font-family: Arial; font-size: small; color: #000000;">
+<div style="padding: 2px 0px 4px 2px;"><strong>VOTE!</strong></div>
+<input id="answer886381431" style="float: left;" name="answer" type="radio" value="1" /><label style="float: left; width: 150px;" for="answer886381431">Left </label>
+<div style="clear: both; height: 2px;">&nbsp;</div>
+<input id="answer886381432" style="float: left;" name="answer" type="radio" value="2" /><label style="float: left; width: 150px;" for="answer886381432">Right</label>
+<div style="clear: both; height: 2px;">&nbsp;</div>
+<div style="padding: 3px;" align="center"><input type="submit" value=" Vote " />&nbsp;<input name="view" type="submit" value=" View " /></div>
+<div style="font-size: 10px;" align="right">&nbsp;</div>
+</div>
+</form>
+<h3 style="text-align: center;">7. FIGHT</h3>
+<form action="https://vote.pollcode.com/84684776" method="post">
+<div style="background-color: #eeeeee; padding: 2px; width: 175px; font-family: Arial; font-size: small; color: #000000;">
+<div style="padding: 2px 0px 4px 2px;"><strong>VOTE!</strong></div>
+<input id="answer886381431" style="float: left;" name="answer" type="radio" value="1" /><label style="float: left; width: 150px;" for="answer886381431">Left </label>
+<div style="clear: both; height: 2px;">&nbsp;</div>
+<input id="answer886381432" style="float: left;" name="answer" type="radio" value="2" /><label style="float: left; width: 150px;" for="answer886381432">Right</label>
+<div style="clear: both; height: 2px;">&nbsp;</div>
+<div style="padding: 3px;" align="center"><input type="submit" value=" Vote " />&nbsp;<input name="view" type="submit" value=" View " /></div>
+<div style="font-size: 10px;" align="right">&nbsp;</div>
+</div>
+</form>
+<h3 style="text-align: center;">8. FIGHT</h3>
+<form action="https://vote.pollcode.com/49565272" method="post">
+<div style="background-color: #eeeeee; padding: 2px; width: 175px; font-family: Arial; font-size: small; color: #000000;">
+<div style="padding: 2px 0px 4px 2px; text-align: center;"><strong>VOTE!</strong></div>
+<input id="answer886381431" style="float: left;" name="answer" type="radio" value="1" /><label style="float: left; width: 150px;" for="answer886381431">Left </label>
+<div style="clear: both; height: 2px; text-align: center;">&nbsp;</div>
+<input id="answer886381432" style="float: left;" name="answer" type="radio" value="2" /><label style="float: left; width: 150px;" for="answer886381432">Right</label>
+<div style="clear: both; height: 2px; text-align: center;">&nbsp;</div>
+<div style="padding: 3px; text-align: center;" align="center"><input type="submit" value=" Vote " />&nbsp;<input name="view" type="submit" value=" View " /></div>
+<div style="font-size: 10px;" align="right">&nbsp;</div>
+</div>
+</form></div>
