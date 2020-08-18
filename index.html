@@ -1,37 +1,28 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <title>Ajax Polling</title>
-  <meta charset="UTF-8" />
+<script>
+function getVote(int) {
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+  xmlhttp.send();
+}
+</script>
 </head>
 <body>
-  <p>Status: <span class="status"></span></p>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script>
-    (function() {
-      var status = $('.status'),
-        poll = function() {
-          $.ajax({
-            url: 'status.json',
-            dataType: 'json',
-            type: 'get',
-            success: function(data) { // check if available
-              status.text('Offline!');
-              if ( data.live ) { // get and check data value
-                status.text(data.info); // get and print data string
-                clearInterval(pollInterval); // optional: stop poll function
-              }
-            },
-            error: function() { // error logging
-              console.log('Error!');
-            }
-          });
-        },
-        pollInterval = setInterval(function() { // run function every 2000 ms
-          poll();
-          }, 2000);
-        poll(); // also run function on init
-    })();
-  </script>
+<div id="poll">
+<h3>IFW BATTLEGROUND</h3>
+<form>
+Yes: <input type="radio" name="vote" value="0" onclick="getVote(this.value)"><br>
+No: <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+</form>
+</div>
+
 </body>
 </html>
